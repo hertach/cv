@@ -13,10 +13,15 @@ return [
     |
     */
 
-    'reset' => 'Your password has been reset.',
-    'sent' => 'We have emailed your password reset link.',
-    'throttled' => 'Please wait before retrying.',
-    'token' => 'This password reset token is invalid.',
-    'user' => "We can't find a user with that email address.",
+    'reset' => 'Ihr Passwort wurde zurückgesetzt.',
+    'sent' => 'Wir haben Ihren Link zum Zurücksetzen des Passworts per E-Mail verschickt.',
+    'throttled' => 'Bitte warten Sie, bevor Sie es erneut versuchen.',
+    'token' => 'Dieses Passwort-Reset-Token ist ungültig.',
+    'user' => 'Wir können keinen Benutzer mit dieser E-Mail-Adresse finden.',
+    'Update_Password' => 'Passwort aktualisieren',
+    'Update_Password_Text' => 'Stellen Sie sicher, dass Ihr Konto ein langes, zufälliges Passwort verwendet, um die Sicherheit zu gewährleisten.',
+    'Current_Password' => 'Aktuelles Passwort',
+    'New_Password' => 'Neues Passwort',
+    'Confirm_Password' => 'Passwort bestätigen',
 
 ];

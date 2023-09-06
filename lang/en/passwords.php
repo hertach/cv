@@ -17,6 +17,11 @@ return [
     'sent' => 'We have emailed your password reset link.',
     'throttled' => 'Please wait before retrying.',
     'token' => 'This password reset token is invalid.',
-    'user' => "We can't find a user with that email address.",
+    'user' => 'We can\'t find a user with that email address.',
+    'Update_Password' => 'Update Password',
+    'Update_Password_Text' => 'Ensure your account is using a long, random password to stay secure.',
+    'Current_Password' => 'Current Password',
+    'New_Password' => 'New Password',
+    'Confirm_Password' => 'Confirm Password',
 
 ];
