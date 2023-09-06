@@ -13,5 +13,7 @@ return [
 
     'German' => 'German',
     'English' => 'English',
+    'Change_Language' => 'Change Language',
+    'Change_Language_Text' => 'Switch your backend language.',
 
 ];
