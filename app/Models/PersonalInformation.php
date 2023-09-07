@@ -17,13 +17,15 @@ class PersonalInformation extends Model
      * @var array<int, string>
      */
     protected $fillable = [
+        'user_id',
         'nationality',
         'hometown',
         'civil_status',
         'children',
+        'birth_date',
     ];
 
-    protected $dates = [
+    protected $casts = [
         'birth_date',
     ];
 
