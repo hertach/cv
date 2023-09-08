@@ -22,22 +22,6 @@ class PersonalInformationController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(StorePersonalInformationRequest $request)
-    {
-        //
-    }
-
-    /**
      * Display the specified resource.
      */
     public function show(PersonalInformation $personalInformation)
@@ -50,9 +34,6 @@ class PersonalInformationController extends Controller
      */
     public function edit(PersonalInformation $personalInformation)
     {
-        //$pi = DB::table('personal_information')
-         //       ->where('user_id', 1)->first();
-
         $pi = PersonalInformation::firstOrNew(
             [
                 'user_id'=> auth()->user()->id
@@ -75,16 +56,6 @@ class PersonalInformationController extends Controller
      */
     public function update(UpdatePersonalInformationRequest $request, PersonalInformation $personalInformation)
     {
-
-//        $pi = PersonalInformation::where('user_id', auth()->user()->id)->first();
-//
-//        $pi->nationality = $request->get('nationality');
-//        $pi->hometown = $request->get('hometown');
-//        $pi->civil_status = $request->get('civil_status');
-//        $pi->children = $request->get('children');
-//        $pi->birth_date = $request->get('birth_date');
-//        $pi->save();
-
         $pi = PersonalInformation::updateOrCreate(
             [
                 'user_id' => auth()->user()->id
@@ -98,13 +69,5 @@ class PersonalInformationController extends Controller
             ]
         );
         return Redirect::route('personalinformation.edit')->with('status', 'personalinformation-updated');
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(PersonalInformation $personalInformation)
-    {
-        //
     }
 }
