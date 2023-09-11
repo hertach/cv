@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\LocalizationController;
 use App\Http\Controllers\PersonalInformationController;
 use App\Http\Controllers\ProfileController;
@@ -34,6 +35,9 @@ Route::middleware('auth')->group(function () {
     // CV - Personal Information
     Route::get('/personalinformation', [PersonalInformationController::class, 'edit'])->name('personalinformation.edit');
     Route::patch('/personalinformation', [PersonalInformationController::class, 'update'])->name('personalinformation.update');
+    // CV - Language
+    Route::get('/language', [LanguageController::class, 'edit'])->name('language.edit');
+    Route::patch('/language', [LanguageController::class, 'update'])->name('language.update');
 });
 
 require __DIR__.'/auth.php';

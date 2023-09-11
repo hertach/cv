@@ -58,7 +58,7 @@
                         <div class="flex items-center gap-4">
                             <x-primary-button>{{ __('Save') }}</x-primary-button>
 
-                            @if (session('status') === 'language-updated')
+                            @if (session('status') === 'personalinformation-updated')
                                 <p
                                     x-data="{ show: true }"
                                     x-show="show"
