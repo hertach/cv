@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StorePersonalInformationRequest;
-use App\Http\Requests\UpdatePersonalInformationRequest;
+use App\Http\Requests\PersonalInformationUpdateRequest;
 use App\Models\PersonalInformation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -54,7 +54,7 @@ class PersonalInformationController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdatePersonalInformationRequest $request, PersonalInformation $personalInformation)
+    public function update(PersonalInformationUpdateRequest $request, PersonalInformation $personalInformation)
     {
         $pi = PersonalInformation::updateOrCreate(
             [
