@@ -13,13 +13,15 @@ return new class extends Migration
     {
         Schema::create('languages', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id')->unsigned();
-            $table->string('language');
-            $table->integer('level');
+            $table->string('language', 5);
+            $table->string('level', 10);
+            $table->integer('sort')->default(1);
+            $table->bigInteger('user_id')->unsigned();
             $table->timestamps();
-            $table->foreign('user_id')->references('id')->on('users')
+            $table->foreign('user_id')
+                  ->references('id')
+                  ->on('users')
                   ->onDelete('cascade');
-            $table->timestamps();
         });
     }
 

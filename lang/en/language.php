@@ -11,9 +11,20 @@ return [
     |
     */
 
+    'Languages' => 'Languages',
+    'ChooseALanguage' => 'Choose a language',
+    'ChooseALevel' => 'Choose a level',
     'German' => 'German',
+    'French' => 'French',
+    'Italian' => 'Italian',
     'English' => 'English',
-    'Change_Language' => 'Change Language',
-    'Change_Language_Text' => 'Switch your backend language.',
-
+    'Level' => 'Level',
+    'Sort' => 'Sort',
+    'Beginner' => 'Beginner',
+    'Basic' => 'Basic knowledge',
+    'Advanced' => 'Advanced language use',
+    'Independent' => 'independent usage of language',
+    'Expert' => 'Expert language skills',
+    'AlmostNative' => 'Almost native language skills',
+    'Native' => 'Native Language',
 ];

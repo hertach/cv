@@ -9,9 +9,9 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
             <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
                 <section>
-                    <form method="post" action="{{ route('language.update', $language->id) }}" class="mt-6 space-y-6">
+                    <form method="POST" action="{{ route('language.store') }}" class="mt-6 space-y-6">
                         @csrf
-                        @method('patch')
+
 
                         @include('language.partials._form')
 

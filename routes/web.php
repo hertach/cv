@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\LocalizationController;
-use App\Http\Controllers\PersonalInformationController;
+use App\Http\Controllers\PersonalinformationController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
@@ -33,11 +33,13 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     // CV - Personal Information
-    Route::get('/personalinformation', [PersonalInformationController::class, 'edit'])->name('personalinformation.edit');
-    Route::patch('/personalinformation', [PersonalInformationController::class, 'update'])->name('personalinformation.update');
+    Route::get('/personalinformation', [PersonalinformationController::class, 'edit'])->name('personalinformation.edit');
+    Route::patch('/personalinformation', [PersonalinformationController::class, 'update'])->name('personalinformation.update');
     // CV - Language
-    Route::get('/language', [LanguageController::class, 'edit'])->name('language.edit');
-    Route::patch('/language', [LanguageController::class, 'update'])->name('language.update');
+//    Route::get('/language', [LanguageController::class, 'index'])->name('language.index');
+//    Route::get('/language', [LanguageController::class, 'edit'])->name('language.edit');
+//    Route::patch('/language', [LanguageController::class, 'update'])->name('language.update');
+    Route::resource('language', LanguageController::class);
 });
 
 require __DIR__.'/auth.php';

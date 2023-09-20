@@ -11,9 +11,20 @@ return [
     |
     */
 
-    'German' => 'German',
-    'English' => 'English',
-    'Change_Language' => 'Change Language',
-    'Change_Language_Text' => 'Switch your backend language.',
-
+    'Languages' => 'Sprachen',
+    'ChooseALanguage' => 'Sprache wählen',
+    'ChooseALevel' => 'Sprachlevel wählen',
+    'German' => 'Deutsch',
+    'French' => 'Französisch',
+    'Italian' => 'Italienisch',
+    'English' => 'Englisch',
+    'Level' => 'Level',
+    'Sort' => 'Sortierung',
+    'Beginner' => 'Anfänger',
+    'Basic' => 'Grundlegende Kenntnisse',
+    'Advanced' => 'Fortgeschrittene Sprachverwendung',
+    'Independent' => 'Selbständige Sprachverwendung',
+    'Expert' => 'Fachkundige Sprachkenntnisse',
+    'AlmostNative' => 'Annähernd muttersprachliche Kenntnisse',
+    'Native' => 'Muttersprache',
 ];
