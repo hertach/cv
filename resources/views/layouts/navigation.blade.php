@@ -35,9 +35,9 @@
                             <x-dropdown-link :href="route('personalinformation.edit')">
                                 {{ __('personalinformation.Personal_Information') }}
                             </x-dropdown-link>
-{{--                            <x-dropdown-link :href="route('profile.edit')">--}}
-{{--                                {{ __('navigation.Profile') }}--}}
-{{--                            </x-dropdown-link>--}}
+                            <x-dropdown-link :href="route('language.index')">
+                                {{ __('language.Languages') }}
+                            </x-dropdown-link>
                         </x-slot>
                     </x-dropdown>
                 </div>
@@ -98,6 +98,9 @@
                 {{ __('navigation.Dashboard') }}
             </x-responsive-nav-link>
             <div class="mt-3 space-y-1">
+                <x-responsive-nav-link :href="route('personalinformation.edit')">
+                    {{ __('personalinformation.Personal_Information') }}
+                </x-responsive-nav-link>
                 <x-responsive-nav-link :href="route('personalinformation.edit')">
                     {{ __('personalinformation.Personal_Information') }}
                 </x-responsive-nav-link>
