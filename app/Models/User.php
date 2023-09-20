@@ -49,13 +49,13 @@ class User extends Authenticatable
     /**
      * Get the personal information associated with the user.
      *
-     * Syntax: return $this->hasOne(PersonalInformation::class, 'foreign_key', 'local_key');
+     * Syntax: return $this->hasOne(Personalinformation::class, 'foreign_key', 'local_key');
      *
-     * Example: return $this->hasOne(PersonalInformation::class, 'user_id', 'id');
+     * Example: return $this->hasOne(Personalinformation::class, 'user_id', 'id');
      */
     public function personal_information(): HasOne
     {
-        return $this->hasOne(PersonalInformation::class);
+        return $this->hasOne(Personalinformation::class);
     }
 
     /**

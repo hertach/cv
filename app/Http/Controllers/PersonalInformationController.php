@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StorePersonalInformationRequest;
-use App\Http\Requests\PersonalInformationUpdateRequest;
-use App\Models\PersonalInformation;
+use App\Http\Requests\StorePersonalinformationRequest;
+use App\Http\Requests\PersonalinformationUpdateRequest;
+use App\Models\Personalinformation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
 use function PHPUnit\Framework\isNull;
 
-class PersonalInformationController extends Controller
+class PersonalinformationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -24,7 +24,7 @@ class PersonalInformationController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(PersonalInformation $personalInformation)
+    public function show(Personalinformation $personalInformation)
     {
         //
     }
@@ -32,9 +32,9 @@ class PersonalInformationController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(PersonalInformation $personalInformation)
+    public function edit(Personalinformation $personalInformation)
     {
-        $pi = PersonalInformation::firstOrNew(
+        $pi = Personalinformation::firstOrNew(
             [
                 'user_id'=> auth()->user()->id
             ],
@@ -54,9 +54,9 @@ class PersonalInformationController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(PersonalInformationUpdateRequest $request, PersonalInformation $personalInformation)
+    public function update(PersonalinformationUpdateRequest $request, Personalinformation $personalInformation)
     {
-        $pi = PersonalInformation::updateOrCreate(
+        $pi = Personalinformation::updateOrCreate(
             [
                 'user_id' => auth()->user()->id
             ],
