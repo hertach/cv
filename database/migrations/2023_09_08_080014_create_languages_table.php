@@ -18,6 +18,7 @@ return new class extends Migration
             $table->integer('sort')->default(1);
             $table->bigInteger('user_id')->unsigned();
             $table->timestamps();
+            $table->softDeletes();
             $table->foreign('user_id')
                   ->references('id')
                   ->on('users')

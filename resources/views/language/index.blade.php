@@ -28,7 +28,7 @@
                             @endswitch
                     @endforeach
                     </ul>
-                    <div class="w-1/2">
+                    <div class="w-1/2 pt-4">
                         <x-primary-link-button route="{{ route('language.create') }}">{{ __('Create') }}</x-primary-link-button>
                     </div>
                 </section>

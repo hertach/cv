@@ -12,6 +12,9 @@ return [
     */
 
     'Languages' => 'Sprachen',
+    'Delete_Language' => 'Sprache löschen',
+    'are_you_sure' => 'Sind Sie sicher, dass Sie diese Sprache löschen möchten?',
+    'click_once_for_delete' => 'Diese Sprache wird dauerhaft gelöscht.',
     'ChooseALanguage' => 'Sprache wählen',
     'ChooseALevel' => 'Sprachlevel wählen',
     'German' => 'Deutsch',

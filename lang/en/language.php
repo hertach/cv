@@ -12,6 +12,9 @@ return [
     */
 
     'Languages' => 'Languages',
+    'Delete_Language' => 'Delete Language',
+    'are_you_sure' => 'Are you sure you want to delete this language?',
+    'click_once_for_delete' => 'This language will be permanently deleted.',
     'ChooseALanguage' => 'Choose a language',
     'ChooseALevel' => 'Choose a level',
     'German' => 'German',

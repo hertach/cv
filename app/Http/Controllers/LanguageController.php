@@ -81,8 +81,11 @@ class LanguageController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Language $language)
+    public function destroy(Language $language): RedirectResponse
     {
-        //
+        $language->delete();
+
+        return redirect()->route('language.index')
+                         ->with('success','Language deleted successfully');
     }
 }
